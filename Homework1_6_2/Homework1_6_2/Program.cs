@@ -10,9 +10,10 @@ namespace Homework1_6_2
     {
         static void Main(string[] args)
         {
-            DrawPlayer drawPlayer = new DrawPlayer(2, 10,'$');
+            Player player = new Player(2, 10, '$');
+            Renderer rendererPlayer = new Renderer(player.PositionX, player.PositionY, player.SymbolPlayer);
 
-            drawPlayer.DrawPosition();
+            rendererPlayer.DrawPosition();
         }
     }
 
@@ -20,11 +21,13 @@ namespace Homework1_6_2
     {
         public int PositionX { get; private set; }
         public int PositionY { get; private set; }
+        public char SymbolPlayer { get; private set; }
 
-        public Player (int positionX, int positionY)
+        public Player (int positionX, int positionY, char symbolPlayer = '&')
         {
             PositionX = positionX;
             PositionY = positionY;
+            SymbolPlayer = symbolPlayer;
         }
 
         public void ShowPosition ()
@@ -33,19 +36,23 @@ namespace Homework1_6_2
         }
     }
 
-    class DrawPlayer : Player
+    class Renderer
     {
-        private char _symbolPlayer;
+        private int PositionX;
+        private int PositionY;
+        private char _symbolRender;
 
-        public DrawPlayer(int positionX, int positionY, char symbolPlayer='&') : base(positionX, positionY)
+        public Renderer (int positionX, int positionY, char symbolRender)
         {
-            _symbolPlayer = symbolPlayer;
+            PositionX = positionX;
+            PositionY = positionY;
+            _symbolRender = symbolRender;
         }
 
         public void DrawPosition()
         {
             Console.SetCursorPosition(PositionX, PositionY);
-            Console.Write(_symbolPlayer);
+            Console.Write(_symbolRender);
         }
     }
 }

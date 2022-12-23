@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pavelinozemcev/Projects/Homework1_6_2/Homework1_6_2/Homework1_6_2.csproj",
+      "projectUniqueName": "/Users/pavelinozemcev/Projects/LOCAL_PROJECTS/Homework1_6_2/Homework1_6_2/Homework1_6_2.csproj",
       "projectName": "Homework1_6_2",
-      "projectPath": "/Users/pavelinozemcev/Projects/Homework1_6_2/Homework1_6_2/Homework1_6_2.csproj",
+      "projectPath": "/Users/pavelinozemcev/Projects/LOCAL_PROJECTS/Homework1_6_2/Homework1_6_2/Homework1_6_2.csproj",
       "packagesPath": "/Users/pavelinozemcev/.nuget/packages/",
-      "outputPath": "/Users/pavelinozemcev/Projects/Homework1_6_2/Homework1_6_2/obj/",
+      "outputPath": "/Users/pavelinozemcev/Projects/LOCAL_PROJECTS/Homework1_6_2/Homework1_6_2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pavelinozemcev/.nuget/NuGet/NuGet.Config"
